@@ -4,7 +4,7 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 
 
 
-## 2. Prerequisite
+## 2. Prerequisites
 ### 2.1 Hardware
 - [**Universal Robot UR10**](https://www.universal-robots.com/products/ur10-robot/)
 - [**Robotiq 140mm Adaptive parallel-jaw gripper**](https://robotiq.com/products/2f85-140-adaptive-robot-gripper)
