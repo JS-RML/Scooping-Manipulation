@@ -1,1 +1,1 @@
-# Scoop-Grasping
+# Scooping
