@@ -24,11 +24,14 @@ This implementation requires the following dependencies (tested on Ubuntu 16.04 
 **Note**: The online compiler [**Jupyter Notebook**](https://jupyter.org/) is needed to run our program.
 
 ## 3. Real Experiments to Practice Scooping
-Create your [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace):
+### 3.1 Build on ROS
+In your [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace):
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/HKUST-RML/Scooping.git
 cd ..
 catkin_make
+source devel/setup.bash
 ```
-Activate robotiq 2-fingered gripper and RealSense Camera in two different terminals:
+Activate robotiq 2-fingered gripper and RealSense Camera in two separate terminals:
+
