@@ -27,7 +27,7 @@ This implementation requires the following dependencies (tested on Ubuntu 16.04 
 Create your [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace):
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/HKUST-RML/Dig-grasping.git
+git clone https://github.com/HKUST-RML/Scooping.git
 cd ..
 catkin_make
 ```
