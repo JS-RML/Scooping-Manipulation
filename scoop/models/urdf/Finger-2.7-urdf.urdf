@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<robot
+  name="Finger-2.7-urdf">
+  <link
+    name="thumbtip">
+    <inertial>
+      <origin
+        xyz="0 2.8711E-09 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.017436" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/thumbtip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/thumbtip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="thumbbase" />
+  <joint
+    name="thumbjoint"
+    type="fixed">
+    <origin
+      xyz="-0.00725+0.0035782 0 -0.127+0.065251"
+      rpy="0 0 0" />
+    <parent
+      link="thumbtip" />
+    <child
+      link="thumbbase" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

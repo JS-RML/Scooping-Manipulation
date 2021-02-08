@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<robot
+  name="Assem-1.7-urdf">
+  <link concave="yes"
+    name="soft_tip">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0027895" />
+      <inertia
+        ixx="3.7543E-08"
+        ixy="1.9893E-09"
+        ixz="2.0225E-09"
+        iyy="1.9297E-08"
+        iyz="-1.8769E-08"
+        izz="1.8675E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/soft_tip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.45882 0.5098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/soft_tip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link concave="yes"
+    name="rigid_tip">
+    <inertial>
+      <origin
+        xyz="0.009594 -0.0053589 -0.062378"
+        rpy="0 0 0" />
+      <mass
+        value="0.028607" />
+      <inertia
+        ixx="2.0812E-06"
+        ixy="9.9347E-07"
+        ixz="-5.8158E-07"
+        iyy="2.5346E-06"
+        iyz="6.4585E-07"
+        izz="2.541E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/rigid_tip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/rigid_tip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="second_motor_joint"
+    type="prismatic">
+    <origin
+      xyz="0.00125 0 0.00016831"
+      rpy="0 6.0185E-31 0" />
+    <parent
+      link="soft_tip" />
+    <child
+      link="rigid_tip" />
+    <axis
+      xyz="0.010013-0.0025846 0+0.0075458 -0.99995+0.035944" />
+    <limit
+      lower="-0.03"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rigid_base" />
+  <joint
+    name="fix_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.125"
+      rpy="1.3878E-15 -6.0185E-31 4.3368E-16" />
+    <parent
+      link="rigid_tip" />
+    <child
+      link="rigid_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link concave="yes"
+    name="rack_base">
+    <inertial>
+      <origin
+        xyz="-2.1364E-05 -0.0083601 0.034896"
+        rpy="0 0 0" />
+      <mass
+        value="0.018126" />
+      <inertia
+        ixx="2.2275E-06"
+        ixy="1.3488E-07"
+        ixz="-6.8735E-08"
+        iyy="4.1251E-07"
+        iyz="7.4801E-07"
+        izz="1.8427E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/rack_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29412 0.76471 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/rack_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="first_motor_joint"
+    type="prismatic">
+    <origin
+      xyz="0.0191 0 -0.15238"
+      rpy="1.3878E-15 -6.6204E-31 4.7705E-16" />
+    <parent
+      link="rigid_tip" />
+    <child
+      link="rack_base" />
+    <axis
+      xyz="0.010013 0 -0.99995" />
+    <limit
+      lower="-0.03"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

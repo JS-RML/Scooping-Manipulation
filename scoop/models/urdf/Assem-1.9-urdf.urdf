@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<robot
+  name="Assem-1.9-urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201424919065009" />
+      <inertia
+        ixx="2.49186899051369E-06"
+        ixy="1.24196728078845E-07"
+        ixz="8.83874720436039E-08"
+        iyy="6.18437412641599E-07"
+        iyz="-6.37048202472177E-07"
+        izz="1.90494647876499E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/base_thumb.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.294117647058824 0.764705882352941 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/base_thumb.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="extend_thumb">
+    <inertial>
+      <origin
+        xyz="-0.0034963 -2.7579E-13 -0.053945"
+        rpy="0 0 0" />
+      <mass
+        value="0.01216" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/extend_thumb.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/extend_thumb.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint"
+    type="prismatic">
+    <origin
+      xyz="0.0191 0+0.00778277869823142 0.1+0.0359572732423468"
+      rpy="0 0 -4.3368E-17" />
+    <parent
+      link="base_link" />
+    <child
+      link="extend_thumb" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.03"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

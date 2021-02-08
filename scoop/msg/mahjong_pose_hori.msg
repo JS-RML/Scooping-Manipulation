@@ -1,0 +1,10 @@
+Header header
+int32 hori_Go_stone_number
+float64 x
+float64 y
+float64 z
+float64 yaw
+float64 pitch
+float64[] normal
+string box
+string box_pixel

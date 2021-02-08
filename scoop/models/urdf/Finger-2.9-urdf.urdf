@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<robot
+  name="Finger-2.9-urdf">
+  <link
+    name="fingertip">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.018936" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/fix_finger_attached_soft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scoop/models/meshes/fix_finger_attached_soft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fingerbase" />
+  <joint
+    name="finger_joint"
+    type="fixed">
+    <origin
+      xyz="0.01025+0.0061759 0 -0.127-0.061073"
+      rpy="0 0 0" />
+    <parent
+      link="fingertip" />
+    <child
+      link="fingerbase" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
