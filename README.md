@@ -2,7 +2,7 @@
 ## 1. Overview
 A novel dexterous robotic manipulation technique which we called Scooping is implemented by this package. The work implies autonoumus picking of thin profile objects from the flat surface and in a dense clutter environment, plastic cards, domino blocks, Go stones for example, using two-finger parallel jaw gripper having one length-controllable digit. The technique presents the ability to carry out complete bin picking: from the first to the last one. The package includes gripper design used, pre-scoop planning, object detection and instance segmentation by Mask-RCNN, scoop-grasp manipulation package and collision check.
 
-###Scooping from Flat Support Surface
+### Scooping from Flat Support Surface
 <p align = "center">
 <img src="files/Github_domino-long.gif" width="360" height="202">   
 <img src="files/Github_domino-short.gif" width="360" height="202">   
@@ -12,7 +12,7 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 </p>
 
 
-###Application to Bin Picking
+### Application to Bin Picking
 <p align = "center">
 <img src="files/Github_plastic-card_bin.gif" width="360" height="202">   
 <img src="files/Github_domino_bin.gif" width="360" height="202">   
