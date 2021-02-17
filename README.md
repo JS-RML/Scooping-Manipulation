@@ -26,9 +26,7 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 - [**Universal Robot UR10**](https://www.universal-robots.com/products/ur10-robot/)
 - [**Robotiq 140mm Adaptive parallel-jaw gripper**](https://robotiq.com/products/2f85-140-adaptive-robot-gripper)
 - [**RealSense Camera SR300**](https://github.com/IntelRealSense/realsense-ros)
-- [**Variable Length Thumb**](https://github.com/HKUST-RML/Scooping/Gripper design/Variable_length_thumb) for keeping contact with the support surface during the course of scooping
-- [**Fixed Length Finger**](https://github.com/HKUST-RML/Scooping/Gripper design/Fixed_length_finger) with soft pad
-- [**Dual_Material_Fixed Length Finger**](https://github.com/HKUST-RML/Scooping/Gripper design/Dual_material_fixed_length_finger) for digging and scooping
+- [**Customized Gripper design**](https://github.com/HKUST-RML/scooping/tree/master/Gripper%20design) comprises a variable-length thumb and a dual-material finger, for realizing finger length difference during scooping and dual material fingertip for the combination of dig-grasping and scooping
 <!-- - [**Customized Finger design**](https://github.com/HKUST-RML/dig-grasping/tree/master/fingertip%20design) features fingertip concavity---
 - [**Extendable Finger**](https://github.com/HKUST-RML/extendable_finger) for realizing finger length differences during digging -->
 
