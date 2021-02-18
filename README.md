@@ -59,3 +59,5 @@ roslaunch robotiq_2f_gripper_control robotiq_action_server.launch comport:=/dev/
 roslaunch robotiq_ft_sensor gripper_sensor.launch   
 roslaunch realsense2_camera rs_camera.launch align_depth:=true
 ```
+### 3.2 Picking objects on a flat surface
+Open another terminal, start Jupyter Notebook via #jupyter notebook#, and run instance_segmentation.ipynb for instance segmentation and object pose detection.
