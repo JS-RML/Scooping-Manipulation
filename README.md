@@ -73,15 +73,16 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 2. Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
 `.
 #### 3.2.2 For picking plastic cards
-Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
-Run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
+1. Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
+2. Run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
 #### 3.2.3 For picking domino blocks
-Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
-Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
+1. Run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
+2. Run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
 #### 3.2.4 For picking triangular prisms
-Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
-Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
+1. Run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
+2. Run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
 #### 3.2.5 Complete bin picking of Go stones by combining dig-grasping and scooping
-First check the requirement for dig-grasping (https://github.com/HKUST-RML/dig-grasping).
-Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
-Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.
+1. First check the requirement for dig-grasping (https://github.com/HKUST-RML/dig-grasping).
+2. Run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
+3. Run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.  
+Please watch the video of the complete bin picking experiment on this link: https://hkustconnect-my.sharepoint.com/:v:/g/personal/saslamaa_connect_ust_hk/EcYXqLvtnr1JmnrqfeQWshMBE3Yrp_pEAOWdEBxE1KMyuw
