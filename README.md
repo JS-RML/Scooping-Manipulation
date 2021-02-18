@@ -53,5 +53,9 @@ cd ..
 catkin_make
 source devel/setup.bash
 ```
-Activate robotiq 2-fingered gripper and RealSense Camera in two separate terminals:
-
+Activate robotiq 2-fingered gripper, the force/torque sensor and RealSense Camera in two separate terminals:
+```
+roslaunch robotiq_2f_gripper_control robotiq_action_server.launch comport:=/dev/ttyUSB0 stroke:=0.140        
+roslaunch robotiq_ft_sensor gripper_sensor.launch   
+roslaunch realsense2_camera rs_camera.launch align_depth:=true
+```
