@@ -68,13 +68,13 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 ```
 ### 3.2 Picking experiments
 #### 3.2.1 For picking Go stones
-Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
+1. Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
 ` for instance segmentation and object pose detection.  
-Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
+2. Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
 `.
 #### 3.2.2 For picking plastic cards
-Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb` for instance segmentation and object pose detection.  
-Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
+Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
+Run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
 #### 3.2.3 For picking domino blocks
 Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
 Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
