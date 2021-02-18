@@ -82,7 +82,7 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 1. Run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
 2. Run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
 #### 3.2.5 Complete bin picking of Go stones by combining dig-grasping and scooping
-1. First check the requirement for dig-grasping (https://github.com/HKUST-RML/dig-grasping).
+1. First check the requirement for [dig-grasping](https://github.com/HKUST-RML/dig-grasping).
 2. Run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
 3. Run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.  
-Please watch the video of the complete bin picking experiment on this link: https://hkustconnect-my.sharepoint.com/:v:/g/personal/saslamaa_connect_ust_hk/EcYXqLvtnr1JmnrqfeQWshMBE3Yrp_pEAOWdEBxE1KMyuw
+Please watch the video of the complete bin picking experiment [here]https://hkustconnect-my.sharepoint.com/:v:/g/personal/saslamaa_connect_ust_hk/EcYXqLvtnr1JmnrqfeQWshMBE3Yrp_pEAOWdEBxE1KMyuw
