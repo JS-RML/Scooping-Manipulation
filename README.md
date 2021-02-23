@@ -4,7 +4,7 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 
 ### Scooping from Flat Support Surface
 <p align = "center">
-<img src="files/Github_domino-long.gif" width="360" height="202">   
+<img src="files/Github_domino-long_1.gif" width="360" height="202">   
 <img src="files/Github_domino-short.gif" width="360" height="202">   
 <img src="files/Github_plastic-card.gif" width="360" height="202">   
 <img src="files/Github_go-stone.gif" width="360" height="202"> 
