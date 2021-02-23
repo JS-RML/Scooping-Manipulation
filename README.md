@@ -46,7 +46,10 @@ This implementation requires the following dependencies (tested on Ubuntu 16.04 
 
 ## 3. Pre-scoop Planning
 We have developed a pre-scoop planner in [python](https://www.python.org/) to get the appropriate fingertip locations on the object face for successful scooping process.
-To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop Planning/AnalyzeMobility_example.py`  
+To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop Planning/AnalyzeMobility_example.py` 
+<p align = "left">
+<img src="files/planner.png" width="360" height="202"> 
+</p>
 To get the plan of Go stone, domino, triangular prism, run the following program respectively:  
 `Scooping/Pre-Scoop Planning/Go_stone.py`  
 `Scooping/Pre-Scoop Planning/domino.py`  
