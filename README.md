@@ -50,10 +50,10 @@ To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop
 <p align = "left">
 <img src="files/planner.png" width="487" height="264"> 
 </p>
-To get the plan of Go stone, domino, triangular prism, run the following program respectively:  
-`Scooping/Pre-Scoop Planning/Go_stone.py`  
-`Scooping/Pre-Scoop Planning/domino.py`  
-`Scooping/Pre-Scoop Planning/triangular.py`  
+To get the plan of Go stone, domino, triangular prism, run the following program respectively:
+`Scooping/Pre-Scoop Planning/Go_stone.py`
+`Scooping/Pre-Scoop Planning/domino.py`
+`Scooping/Pre-Scoop Planning/triangular.py`
 
 ## 3. Real Experiments to Practice Scooping
 ### 3.1 Build on ROS
