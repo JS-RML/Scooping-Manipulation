@@ -19,7 +19,7 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 <img src="files/Github_go-stone_bin.gif" width="360" height="202"> 
 <img src="files/Github_triangular-prism_bin.gif" width="360" height="202">
 </p>
-
+The video of the complete bin picking experiment via dig-grasping and scooping is available at https://youtu.be/A1oetxHKOyY.
 
 ## 2. Prerequisites
 ### 2.1 Hardware
@@ -85,4 +85,7 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 1. First check the requirement for [dig-grasping](https://github.com/HKUST-RML/dig-grasping).
 2. Run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
 3. Run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.  
-The video of the complete bin picking experiment is available at https://youtu.be/A1oetxHKOyY.
+
+
+## Maintenance 
+For any technical issues, please contact: Tierui He (theae@connect.ust.hk), and Shoaib Aslam (saslamaa@connect.ust.hk).
