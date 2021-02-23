@@ -50,7 +50,10 @@ To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop
 <p align = "left">
 <img src="files/planner.png" width="487" height="264"> 
 </p>
-To get the plan of Go stone, domino, triangular prism, run the following program respectively: `Scooping/Pre-Scoop Planning/Go_stone.py`,`Scooping/Pre-Scoop Planning/domino.py`,`Scooping/Pre-Scoop Planning/triangular.py`  
+To get the plan of Go stone, domino, triangular prism, run the following program respectively:  
+`Scooping/Pre-Scoop Planning/Go_stone.py`  
+`Scooping/Pre-Scoop Planning/domino.py`  
+`Scooping/Pre-Scoop Planning/triangular.py`  
 
 ## 3. Real Experiments to Practice Scooping
 ### 3.1 Build on ROS
@@ -76,7 +79,7 @@ In each of the below experiment, two separate terminals are required. One for ex
 #### 3.3.1 Picking Go stone
 1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
 ` for instance segmentation and object pose detection.  
-2. Start 'jupyter notebook' in second terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
+2. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
 `.
 #### 3.3.2 Picking Plastic Card
 1. Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
