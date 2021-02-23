@@ -19,7 +19,8 @@ A novel dexterous robotic manipulation technique which we called Scooping is imp
 <img src="files/Github_go-stone_bin.gif" width="360" height="202"> 
 <img src="files/Github_triangular-prism_bin.gif" width="360" height="202">
 </p>
-The video of the complete bin picking experiment via [dig-grasping](https://github.com/HKUST-RML/dig-grasping) and scooping is available at https://youtu.be/A1oetxHKOyY.
+
+The video of the complete bin picking experiment via -[dig-grasping](https://github.com/HKUST-RML/dig-grasping) and scooping is available at https://youtu.be/A1oetxHKOyY.
 
 ## 2. Prerequisites
 ### 2.1 Hardware
