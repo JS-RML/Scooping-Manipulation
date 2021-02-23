@@ -68,19 +68,20 @@ roslaunch robotiq_2f_gripper_control robotiq_action_server.launch comport:=/dev/
 roslaunch robotiq_ft_sensor gripper_sensor.launch   
 roslaunch realsense2_camera rs_camera.launch align_depth:=true
 ```
-### 3.2 Picking experiments
-#### 3.2.1 For picking Go stones
-1. Open another terminal, start Jupyter Notebook via `jupyter notebook`, and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
+### 3.2 Bin Picking Experiments
+In each of the below experiment, two separate terminals are required. One for executing the program of instance segmentation/object detection and another one for executing the program of scoop manipulation in the sequence given below.
+#### 3.2.1 Picking Go stone
+1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
 ` for instance segmentation and object pose detection.  
-2. Start another Jupyter Notebook in a new terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
+2. Start 'jupyter notebook' in second terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
 `.
-#### 3.2.2 For picking plastic cards
+#### 3.2.2 Picking Plastic Card
 1. Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
 2. Run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
-#### 3.2.3 For picking domino blocks
+#### 3.2.3 Picking Domino Block
 1. Run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
 2. Run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
-#### 3.2.4 For picking triangular prisms
+#### 3.2.4 Picking Triangular Prism
 1. Run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
 2. Run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
 #### 3.2.5 Complete bin picking of Go stones by combining dig-grasping and scooping
