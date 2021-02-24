@@ -43,7 +43,9 @@ This implementation requires the following dependencies (tested on Ubuntu 16.04 
 - [**PyBullet**](https://pybullet.org/wordpress/) for collision check
 
 **Note**: The online compiler [**Jupyter Notebook**](https://jupyter.org/) is needed to run our program.
+
 **Note**: We have generated two separate python environments in [anaconda](https://docs.anaconda.com/anaconda/install/linux/), [python2.7](https://www.python.org/download/releases/2.7/) for ROS Kinetic, URx, robotiq_2finger_grippers and [python3.5](https://www.python.org/downloads/release/python-350/) for Mask_R_CNN.
+
 ## 3. Pre-scoop Planning
 We have developed a pre-scoop planner in [python](https://www.python.org/) to get the appropriate fingertip locations on the object face for successful scooping process.
 To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop Planning/AnalyzeMobility_example.py` 
