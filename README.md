@@ -43,7 +43,7 @@ This implementation requires the following dependencies (tested on Ubuntu 16.04 
 - [**PyBullet**](https://pybullet.org/wordpress/) for collision check
 
 **Note**: The online compiler [**Jupyter Notebook**](https://jupyter.org/) is needed to run our program.
-
+**Note**: We have generated two separate python environments in [anaconda](https://docs.anaconda.com/anaconda/install/linux/), [python2.7](https://www.python.org/download/releases/2.7/) for ROS Kinetic, URx, robotiq_2finger_grippers and [python3.5](https://www.python.org/downloads/release/python-350/) for Mask_R_CNN.
 ## 3. Pre-scoop Planning
 We have developed a pre-scoop planner in [python](https://www.python.org/) to get the appropriate fingertip locations on the object face for successful scooping process.
 To get some example results of AnalyzeMobility function, run `Scooping/Pre-Scoop Planning/AnalyzeMobility_example.py` 
@@ -75,6 +75,7 @@ roslaunch robotiq_ft_sensor gripper_sensor.launch
 roslaunch robotiq_2f_gripper_control robotiq_action_server.launch comport:=/dev/ttyUSB0 stroke:=0.140        
 roslaunch realsense2_camera rs_camera.launch align_depth:=true
 ```
+
 ### 3.2 Scooping an Isolated Object from a Flat Support Surface
 
 
@@ -86,18 +87,18 @@ In each of the below experiment, two separate terminals are required. One for ex
 2. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_only_skim.ipynb
 `.
 #### 3.3.2 Picking Plastic Card
-1. Run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
-2. Run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
+1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/plastic_cards/plastic_cards_detection_ros.ipynb`.  
+2. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/plastic_card/plastic_card_variable_thumb.ipynb`.
 #### 3.3.3 Picking Domino Block
-1. Run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
-2. Run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
+1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/domino/domino_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
+2. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/domino/domino_variable_thumb_round_bowl.ipynb`.
 #### 3.3.4 Picking Triangular Prism
-1. Run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
-2. Run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
+1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/triangle/triangle_detection_ros.ipynb` for instance segmentation and object pose detection.  
+2. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/triangle/triangle_variable_thumb_round_bowl.ipynb`.
 #### 3.3.5 Complete bin picking of Go stones by combining dig-grasping and scooping
 1. First check the requirement for [dig-grasping](https://github.com/HKUST-RML/dig-grasping).
-2. Run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
-3. Run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.  
+2. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb` for instance segmentation and object pose detection.  
+3. Start Jupyter Notebook via `jupyter notebook` in second terminal, and run `Scooping/scoop/src/Go_stone/Go_stone_variable_thumb_round_bowl_diggrasp_and_scoop.ipynb`.  
 
 
 ## Maintenance 
