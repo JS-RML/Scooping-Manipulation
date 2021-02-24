@@ -82,7 +82,7 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 
 
 ### 3.3 Bin Picking Experiments
-In each of the below experiment, two separate terminals are required. One for executing the program of instance segmentation/object detection and another one for executing the program of scoop manipulation in the sequence given below.
+In each of the below experiment, two separate terminals are required. One for executing the program of instance segmentation/object detection (activate conda enviroment having python3.5) and another one for executing the program of scoop manipulation (activate conda environment having python2.7) in the sequence given below.
 #### 3.3.1 Picking Go stone
 1. Start Jupyter Notebook via `jupyter notebook` in first terminal and run `Scooping/instance_segmentation/samples/stones/stone_detection_ros_both_hori_and_ver.ipynb
 ` for instance segmentation and object pose detection.  
