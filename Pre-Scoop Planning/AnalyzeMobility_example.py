@@ -37,14 +37,16 @@ for object_vertex_position_on_ground in [object_vertex_position_on_ground_0, obj
         point_index_temp = (i-0.5)*(circumference(object_vertex_position)/1000.0)
         finger_position = finger_index2position(object_vertex_position, point_index_temp)
         contact_index, contact_list, contact_normal_list, contact_local_tangent_list = contact_points_and_normal(object_vertex_position, finger_position, env_profile)
-        A_ub = np.array(contact_normal_list)
-        A_ub = A_ub[:, [1, 0]]
-        A_ub[:, 0] = -A_ub[:, 0]
+        tangential_vector_list = []
+        for vector in contact_normal_list:
+            tangential_vector_list.append(point_position_after_rotation(vector, [0,0], 90))
+        A_ub = np.array(tangential_vector_list)
+        A_ub = A_ub
         A_ub = A_ub.tolist()
         b_ub = []
         for k in range(len(contact_list)):
-            b_ub.append(-contact_list[k][0]*contact_normal_list[k][1]+contact_list[k][1]*contact_normal_list[k][0])
-        f = [1,1]
+            b_ub.append(contact_list[k][0]*tangential_vector_list[k][0]+contact_list[k][1]*tangential_vector_list[k][1])
+        f = [0,1]
         res1 = linprog(f, A_ub, b_ub)
         if res1.status == 2:
             Rotate_CW = False
@@ -56,7 +58,11 @@ for object_vertex_position_on_ground in [object_vertex_position_on_ground_0, obj
                 Rotate_CW = False
             else:
                 Rotate_CW = True
-        if Rotate_CW == True:
+                if res1.x[1] > 0:
+                    Gmoveleft = True
+                else:
+                    Gmoveleft = False
+        if Rotate_CW == True and Gmoveleft == True:
             feasible_finger_position_set.append(finger_position)
 
     print feasible_finger_position_set
