@@ -105,9 +105,11 @@ for object_vertex_position_on_ground in slice_set:
         point_index_temp = (i-0.5)*(circumference(object_vertex_position)/100.0)
         finger_position = finger_index2position(object_vertex_position, point_index_temp)
         contact_index, contact_list, contact_normal_list, contact_local_tangent_list = contact_points_and_normal(object_vertex_position, finger_position, env_profile)
-        A_ub = np.array(contact_normal_list)
-        A_ub = A_ub[:, [1, 0]]
-        A_ub[:, 0] = -A_ub[:, 0]
+        tangential_vector_list = []
+        for vector in contact_normal_list:
+            tangential_vector_list.append(point_position_after_rotation(vector, [0,0], 90))
+        A_ub = np.array(tangential_vector_list)
+        A_ub = A_ub
         A_ub = A_ub.tolist()
         b_ub = []
         for k in range(len(contact_list)):
@@ -124,7 +126,11 @@ for object_vertex_position_on_ground in slice_set:
                 Rotate_CW = False
             else:
                 Rotate_CW = True
-        if Rotate_CW == True:
+                if res1.x[1] > 0:
+                    Gmoveleft = True
+                else:
+                    Gmoveleft = False
+        if Rotate_CW == True and Gmoveleft == True:
             feasible_finger_position_set.append(finger_position)
 
     if feasible_finger_position_set != []:
